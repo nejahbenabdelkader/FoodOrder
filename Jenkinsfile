@@ -8,23 +8,13 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t nejahbenabdelkader/test_react:2.0 .'
+				sh 'docker run hello-world'
 			}
 		}
 
-		stage('Login') {
+		
 
-			steps {
-				sh ' docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-			}
-		}
-
-		stage('Push') {
-
-			steps {
-				sh 'docker push nejahbenabdelkader/test_react:2.0'
-			}
-		}
+		
 	}
 
 	post {
