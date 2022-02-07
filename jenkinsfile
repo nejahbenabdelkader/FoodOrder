@@ -1,15 +1,25 @@
-pipeline {
-    agent any
+pipeline{
 
-    stages {
-        stage('Build') {
-            steps {
-                // Get some code from a GitHub repository
-                git 'https://github.com/nejahbenabdelkader/test_react.git'
-                echo '7mmd ye5dem '
-            }
+	agent any
 
-        
-        }
-    }
+	environment {
+		DOCKERHUB_CREDENTIALS=credentials('dockerhub-id')
+	}
+
+	stages {
+
+		stage('Build') {
+
+			steps {
+				echo 'ye5dem w 7mmd'
+			}
+		}
+
+		
+
+		
+	}
+
+	
+
 }
