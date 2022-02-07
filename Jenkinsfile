@@ -1,8 +1,13 @@
 pipeline {
     agent any 
+    environment {
+		DOCKERHUB_CREDENTIALS=credentials('dockerhub-cred-raja')
+	}
     stages {
+        stage("test")
         steps {
-            echo "ye5dem"
+            sh "docker --version"
+            sh "echo $DOCKERHUB_CREDENTIALS_PSW "
         }
     }
 }
