@@ -12,6 +12,7 @@ pipeline{
 
 			steps {
 				echo 'ye5dem w 7mmd'
+                sh 'echo $DOCKERHUB_CREDENTIALS_PSW
 			}
 		}
 

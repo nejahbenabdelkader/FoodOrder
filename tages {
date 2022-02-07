@@ -1,0 +1,17 @@
+[33mcommit 2b10f19d41c5ee126fc0c0ff398350b07a0f1947[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: nejahbenabdelkader <70769535+nejahbenabdelkader@users.noreply.github.com>
+Date:   Mon Feb 7 21:35:22 2022 +0100
+
+    added jenkinsfile
+
+[33mcommit 1bec364dd1c8204ad1f9cc588b38ef90907e6844[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: nejahbenabdelkader <70769535+nejahbenabdelkader@users.noreply.github.com>
+Date:   Mon Feb 7 10:57:27 2022 +0100
+
+    second_try
+
+[33mcommit 2a1340a9533d17fc0cc99aa1e71a82f1cac65fd6[m
+Author: nejahbenabdelkader <70769535+nejahbenabdelkader@users.noreply.github.com>
+Date:   Wed Feb 2 14:46:47 2022 +0100
+
+    test_react_pipeline
