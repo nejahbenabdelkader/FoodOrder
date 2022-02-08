@@ -8,7 +8,8 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker run hello-world'
+				sh 'docker build -t "react_app" . '
+				sh 'docker login'
 			}
 		}
 
