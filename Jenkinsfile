@@ -8,7 +8,7 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t "Nejahbenabdelkader/react_app" . '
+				sh 'docker build -t "nejahbenabdelkader/react_app" . '
 				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
 			}
 		}
