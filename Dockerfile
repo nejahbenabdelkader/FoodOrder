@@ -1,7 +1,7 @@
 ### STAGE 1: Build ###
 FROM node:14 as builder
 WORKDIR /usr/app
-COPY package*.json .
+COPY package*.json ./
 RUN npm install --silent
 COPY . .
 RUN npm run build
