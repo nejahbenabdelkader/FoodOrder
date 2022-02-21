@@ -6,6 +6,16 @@ pipeline {
 	}
     stages {
 
+		stage('Cloning our Git') { 
+10
+            steps { 
+11
+                git 'https://github.com/nejahbenabdelkader/test_react.git' 
+12
+            }
+13
+        } 
+
 		stage('Build') {
 
 			steps {
