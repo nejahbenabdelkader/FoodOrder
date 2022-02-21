@@ -1,14 +1,15 @@
 pipeline {
     agent any 
     environment {
-		DOCKERHUB_CREDENTIALS=credentials('dockerHub_Id')
+		registryCredential = 'dockerHub_Id' 
+		registry = "Nejahbenabdelkader/test_react" 
 	}
     stages {
 
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t "nejahbenabdelkader/react_app" . '
+				dockerImage = docker.build registry + ":$BUILD_NUMBER" 
 			}
 		}
 		stage('Login') {
@@ -20,7 +21,9 @@ pipeline {
 		stage('Push') {
 
 			steps {
-				sh 'docker push "nejahbenabdelkader/react_app" '
+				 docker.withRegistry( '', registryCredential ) { 
+                        dockerImage.push() 
+			}
 			}
 		}
 
