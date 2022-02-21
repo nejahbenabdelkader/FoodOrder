@@ -5,11 +5,7 @@ pipeline {
 		registry = "Nejahbenabdelkader/test_react" 
 	}
     stages {
-		stage('Cloning our Git') { 
-            steps { 
-                git 'https://github.com/nejahbenabdelkader/test_react.git' 
-            }
-        } 
+		
 		stage('Build') {
 			steps {
 				 script { 
