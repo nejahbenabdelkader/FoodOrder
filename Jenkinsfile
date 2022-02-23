@@ -5,7 +5,11 @@ pipeline {
 		registry = "nejahbenabdelkader/test_react" 
 	}
     stages {
-		
+		stage ('TestQuality') {
+			steps {
+				sh 'npm run sonar-scanner'
+			}
+		}
 		stage('Build') {
 			steps {
 				 script { 
