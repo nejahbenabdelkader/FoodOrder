@@ -1,5 +1,5 @@
 pipeline {
-    agent {docker { image '16-alpine'}}
+    agent {docker { image 'node:16-alpine'}}
     environment {
 		registryCredential = 'DockerHub_Id' 
 		registry = "nejahbenabdelkader/test_react" 
